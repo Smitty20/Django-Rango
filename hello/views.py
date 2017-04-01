@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-
+import time
 
 def index(request):
-    return HttpResponse("Hello, world.")
+    return HttpResponse("Hello, human! Current date is: " + time.strftime("%c"))
